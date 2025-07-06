@@ -40,7 +40,7 @@ terraform workspace new prod
 * prod
 ```
 
-7. To format properly the file use: `terraform validate`
+7. To format properly the file use: `terraform fmt`
 
 8. To validate sintaxe use: `terraform validate`
 

@@ -1,5 +1,33 @@
 # Commands Terraform
 
+## IMPORTANT:
+
+For all tutorials, follow the steps below:
+## Steps
+1. Login at azure
+``` pwsh
+az login
+```
+
+2. Set your  account using
+``` pwsh
+az account set --subscription "<subscription_id>"
+```
+
+3. Set locally an environment variable as follow using power shell:
+All environment variables used by terraform must have the prefix `TF_VAR_`
+``` pwsh
+$env:TF_VAR_SUBSCRIPTION_ID="<subscription_id>"
+```
+Note-> you can also pass this variable in command using: 
+
+- `-var "SUBSCRIPTION_ID=<subscription_id>"`
+
+- `tfvars` file with arg: `-var_file="myFile.tfvars"`
+
+----------------------------------
+
+
 ## Main
 `terraform init`: Initialize terraform and download providers at the root folder
 
